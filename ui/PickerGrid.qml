@@ -29,8 +29,8 @@ GridView {
                                         Math.ceil(Theme.grid.captionHeight),
                                         Density.gridPadY(Theme.spacing.rowPaddingX, ViewState.density))
     readonly property int visibleTileRows: Math.max(1, Math.ceil(root.height / root.cellHeightPx))
-    onColumnsChanged: if (root.visible) settle.restart()
-    onVisibleTileRowsChanged: if (root.visible) settle.restart()
+    onColumnsChanged: if (root.visible) { coalesce.restart(); settle.restart() }
+    onVisibleTileRowsChanged: if (root.visible) { coalesce.restart(); settle.restart() }
 
     // Hidden builds nothing: a hidden view is not a free view, AGENTS.md rule 6.
     model: root.visible ? root.picker.total : 0

@@ -23,7 +23,8 @@ None of these controls writes the selected file or adds file-manager operations.
 chooser and backend in Open/Save and initial List/Grid combinations. It checks
 path activation, selection, Escape, focus transfer, typed navigation, actual hidden
 rows, request-local visibility, submission guards, filename preservation, all six
-zoom stops, bounds and ordinary scrolling. Synthetic handler events additionally
+zoom stops, bounds, ordinary scrolling, and refetching newly visible rows after
+zoom-out without a scroll event. Synthetic handler events additionally
 cover fractional notches, phased touchpad travel and notches with incidental pixel
 deltas. The suite is registered in `tests/run-all.sh` and uses marker-owned,
 disposable fixtures through `tools/flea-sandbox-guard`.

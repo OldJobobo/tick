@@ -179,6 +179,20 @@ ShellRoot {
         })
         actions.push(function() {
             root.check("ordinary wheel scrolls rather than zooms", grid.contentY > 0 && Flea.ViewState.thumbnailSize === "medium")
+            grid.contentY = 0
+            Flea.ViewState.changeSetting("preview.thumbSize", "largest")
+            return true
+        })
+        actions.push(function() {
+            // Leave only the first held row: zoom must refetch without a scroll event.
+            win.rows = win.rows.slice(0, 1)
+            beforeScroll = grid.contentY
+            root.wheel(-20)
+            return true
+        })
+        actions.push(function() {
+            if (win.rows.length <= 1) return false
+            root.check("zoom-out refetches newly visible rows without scrolling", grid.contentY === beforeScroll && Flea.ViewState.thumbnailSize === "small")
             root.check("interactions never submit or change the save name", !win.answered && (!win.saving || win.saveName === "report.pdf"))
             root.done(); return true
         })
