@@ -8,6 +8,7 @@ import "js/Density.js" as Density
 import "js/Thumbs.js" as Thumbs
 import "js/ExtThumbs.js" as ExtThumbs
 import "js/Sort.js" as Sort
+import "js/Scroll.js" as Scroll
 
 // Issue #191 grid mode: the main window's tiles over the same rows, visible tiles only.
 GridView {
@@ -48,7 +49,7 @@ GridView {
     topMargin: Theme.spacing.gap
     cellWidth: GridGeometry.cellWidthFor(root.width, root.columns, Theme.spacing.gap, Theme.spacing.rowPaddingX)
     cellHeight: root.cellHeightPx
-    Flea.FastScrollHandler { flickable: root }
+    Flea.FastScrollHandler { flickable: root; ctrlWheelAction: root.zoomWheel }
     Flea.ViewportScrollBar {
         parent: root
         anchors { top: parent.top; right: parent.right }
@@ -125,6 +126,22 @@ GridView {
     footer: Item {
         width: Math.max(0, root.width - Theme.spacing.rowPaddingX)
         height: Theme.chromeHeight
+    }
+
+    // Match GridArea's six size stops and Qt wheel/touchpad travel, without scrolling on zoom.
+    property real zoomTravel: 0
+    function zoomWheel(wheel) {
+        if (!ViewState.ctrlZoom) return false
+        var phase = wheel.phase !== undefined ? wheel.phase : Qt.NoScrollPhase
+        root.zoomTravel += Scroll.zoomTravel(phase, wheel.pixelDelta.y, wheel.angleDelta.y, 48, 120)
+        var steps = root.zoomTravel > 0 ? Math.floor(root.zoomTravel) : Math.ceil(root.zoomTravel)
+        if (steps !== 0) {
+            root.zoomTravel -= steps
+            const sizes = ["small", "medium", "large", "xlarge", "huge", "largest"]
+            const next = Math.max(0, Math.min(sizes.length - 1, sizes.indexOf(ViewState.thumbnailSize) + steps))
+            ViewState.changeSetting("preview.thumbSize", sizes[next])
+        }
+        return true
     }
 
     function moveCursor(delta, extending) {
