@@ -1,0 +1,324 @@
+[
+  {
+    "variant": "before",
+    "frame": "00-start",
+    "editing": false,
+    "hidden": false,
+    "rows": [
+      "Reference",
+      "Projects",
+      "readme.txt",
+      "launch-notes.md",
+      "budget.csv",
+      "brief.pdf"
+    ],
+    "size": "medium",
+    "view": "list",
+    "filename": "report.pdf",
+    "answered": false,
+    "width": 840,
+    "height": 560
+  },
+  {
+    "variant": "before",
+    "frame": "01-path-click",
+    "editing": false,
+    "hidden": false,
+    "rows": [
+      "Reference",
+      "Projects",
+      "readme.txt",
+      "launch-notes.md",
+      "budget.csv",
+      "brief.pdf"
+    ],
+    "size": "medium",
+    "view": "list",
+    "filename": "report.pdf",
+    "answered": false,
+    "width": 840,
+    "height": 560
+  },
+  {
+    "variant": "before",
+    "frame": "02-hidden-files",
+    "editing": false,
+    "hidden": false,
+    "rows": [
+      "Reference",
+      "Projects",
+      "readme.txt",
+      "launch-notes.md",
+      "budget.csv",
+      "brief.pdf"
+    ],
+    "size": "medium",
+    "view": "list",
+    "filename": "report.pdf",
+    "answered": false,
+    "width": 840,
+    "height": 560
+  },
+  {
+    "variant": "before",
+    "frame": "03-grid-medium",
+    "editing": false,
+    "hidden": false,
+    "rows": [
+      "Reference",
+      "Projects",
+      "readme.txt",
+      "launch-notes.md",
+      "budget.csv",
+      "brief.pdf"
+    ],
+    "size": "medium",
+    "view": "grid",
+    "filename": "report.pdf",
+    "answered": false,
+    "width": 840,
+    "height": 560
+  },
+  {
+    "variant": "before",
+    "frame": "04-grid-wheel-up",
+    "editing": false,
+    "hidden": false,
+    "rows": [
+      "Reference",
+      "Projects",
+      "readme.txt",
+      "launch-notes.md",
+      "budget.csv",
+      "brief.pdf"
+    ],
+    "size": "medium",
+    "view": "grid",
+    "filename": "report.pdf",
+    "answered": false,
+    "width": 840,
+    "height": 560
+  },
+  {
+    "variant": "before",
+    "frame": "05-grid-wheel-up-again",
+    "editing": false,
+    "hidden": false,
+    "rows": [
+      "Reference",
+      "Projects",
+      "readme.txt",
+      "launch-notes.md",
+      "budget.csv",
+      "brief.pdf"
+    ],
+    "size": "medium",
+    "view": "grid",
+    "filename": "report.pdf",
+    "answered": false,
+    "width": 840,
+    "height": 560
+  },
+  {
+    "variant": "before",
+    "frame": "06-grid-huge",
+    "editing": false,
+    "hidden": false,
+    "rows": [
+      "Reference",
+      "Projects",
+      "readme.txt",
+      "launch-notes.md",
+      "budget.csv",
+      "brief.pdf"
+    ],
+    "size": "medium",
+    "view": "grid",
+    "filename": "report.pdf",
+    "answered": false,
+    "width": 840,
+    "height": 560
+  },
+  {
+    "variant": "before",
+    "frame": "07-grid-wheel-down",
+    "editing": false,
+    "hidden": false,
+    "rows": [
+      "Reference",
+      "Projects",
+      "readme.txt",
+      "launch-notes.md",
+      "budget.csv",
+      "brief.pdf"
+    ],
+    "size": "medium",
+    "view": "grid",
+    "filename": "report.pdf",
+    "answered": false,
+    "width": 840,
+    "height": 560
+  },
+  {
+    "variant": "after",
+    "frame": "00-start",
+    "editing": false,
+    "hidden": false,
+    "rows": [
+      "Reference",
+      "Projects",
+      "readme.txt",
+      "launch-notes.md",
+      "budget.csv",
+      "brief.pdf"
+    ],
+    "size": "medium",
+    "view": "list",
+    "filename": "report.pdf",
+    "answered": false,
+    "width": 840,
+    "height": 560
+  },
+  {
+    "variant": "after",
+    "frame": "01-path-click",
+    "editing": true,
+    "hidden": false,
+    "rows": [
+      "Reference",
+      "Projects",
+      "readme.txt",
+      "launch-notes.md",
+      "budget.csv",
+      "brief.pdf"
+    ],
+    "size": "medium",
+    "view": "list",
+    "filename": "report.pdf",
+    "answered": false,
+    "width": 840,
+    "height": 560
+  },
+  {
+    "variant": "after",
+    "frame": "02-hidden-files",
+    "editing": false,
+    "hidden": true,
+    "rows": [
+      "Reference",
+      "Projects",
+      "readme.txt",
+      "launch-notes.md",
+      "budget.csv",
+      "brief.pdf",
+      ".env.example",
+      ".draft-notes.txt"
+    ],
+    "size": "medium",
+    "view": "list",
+    "filename": "report.pdf",
+    "answered": false,
+    "width": 840,
+    "height": 560
+  },
+  {
+    "variant": "after",
+    "frame": "03-grid-medium",
+    "editing": false,
+    "hidden": false,
+    "rows": [
+      "Reference",
+      "Projects",
+      "readme.txt",
+      "launch-notes.md",
+      "budget.csv",
+      "brief.pdf"
+    ],
+    "size": "medium",
+    "view": "grid",
+    "filename": "report.pdf",
+    "answered": false,
+    "width": 840,
+    "height": 560
+  },
+  {
+    "variant": "after",
+    "frame": "04-grid-wheel-up",
+    "editing": false,
+    "hidden": false,
+    "rows": [
+      "Reference",
+      "Projects",
+      "readme.txt",
+      "launch-notes.md",
+      "budget.csv",
+      "brief.pdf"
+    ],
+    "size": "large",
+    "view": "grid",
+    "filename": "report.pdf",
+    "answered": false,
+    "width": 840,
+    "height": 560
+  },
+  {
+    "variant": "after",
+    "frame": "05-grid-wheel-up-again",
+    "editing": false,
+    "hidden": false,
+    "rows": [
+      "Reference",
+      "Projects",
+      "readme.txt",
+      "launch-notes.md",
+      "budget.csv",
+      "brief.pdf"
+    ],
+    "size": "xlarge",
+    "view": "grid",
+    "filename": "report.pdf",
+    "answered": false,
+    "width": 840,
+    "height": 560
+  },
+  {
+    "variant": "after",
+    "frame": "06-grid-huge",
+    "editing": false,
+    "hidden": false,
+    "rows": [
+      "Reference",
+      "Projects",
+      "readme.txt",
+      "launch-notes.md",
+      "budget.csv",
+      "brief.pdf"
+    ],
+    "size": "huge",
+    "view": "grid",
+    "filename": "report.pdf",
+    "answered": false,
+    "width": 840,
+    "height": 560
+  },
+  {
+    "variant": "after",
+    "frame": "07-grid-wheel-down",
+    "editing": false,
+    "hidden": false,
+    "rows": [
+      "Reference",
+      "Projects",
+      "readme.txt",
+      "launch-notes.md",
+      "budget.csv",
+      "brief.pdf"
+    ],
+    "size": "xlarge",
+    "view": "grid",
+    "filename": "report.pdf",
+    "answered": false,
+    "width": 840,
+    "height": 560
+  }
+]
